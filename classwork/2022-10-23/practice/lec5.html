@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/MYJS.JS"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the following to see the result:</p>
+    <button onclick="showValue()" class="btn btn-outline-danger">Click Me</button>
+    <form name="fm" style="width: 60%;margin-left: 24%;">
+        <hr>
+          <h2 style="text-align: center;">Check</h2>
+          <hr>
+          <br>
+          <div class="mb-3 mt-3" style="margin-left: 10 4px;">
+            <label for="nm1" class="form-label">Password:</label>
+            <input type="password" id="nm1" placeholder="Enter Number1" name="nm1">
+          </div>
+          <br><br>
+          
+          <button type="button" class="btn btn-outline-info" style="margin-left: 12%;padding-left: 26px;padding-right: 26px;" onclick="CHKlngth(document.getElementById('nm1').value)">Click</button>
+          <button type="button" class="btn btn-outline-info" style="margin-left: 12%;padding-left: 26px;padding-right: 26px;" onclick="CHKslice(document.getElementById('nm1').value)">Slice</button>
+         
+          <hr>
+  
+          
+  
+          <hr>
+        </form>
+</body>
+</html>
