@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <style>
+      #main {
+        flex-direction: row;
+        /* direction: flex; */
+        width: 80%;
+        height: 960px;
+        border: 2px dashed black;
+        /* background-image: url(../images/a1.gif);
+        background-repeat: no-repeat;
+        background-position: auto; */
+        background-color: rgba(165, 154, 113, 0.404);
+        background-size: cover;
+        margin: 40px auto;
+      }
+      #header {
+        width: 90%;
+        height: 80px;
+        border: 2px dashed red;
+        margin: 13px auto;
+      }
+      #nav {
+        width: 90%;
+        height: 80px;
+        border: 2px dashed red;
+        /* margin-left: 2%;
+                margin-right: -80%; */
+        margin: auto;
+      }
+      #wrapper {
+        width: 90%;
+        height: 635px;
+        border: 2px dotted red;
+        /* margin-left: 2%;
+                margin-right: -80%; */
+        margin: auto;
+        /* flex-direction: column; */
+      }
+      #left {
+        width: 30%;
+        height: 300px;
+        border: 2px solid red;
+        margin: 45px;
+        float: left;
+      }
+      #right {
+        width: 50%;
+        height: 300px;
+        border: 2px solid red;
+        margin: 45px;
+        float: right;
+      }
+      #footer {
+        /* flex: bottom; */
+        width: 90%;
+        height: 80px;
+        border: 2px dashed red;
+        /* margin-left: 2%;
+                margin-right: -80%; */
+        margin: auto;
+      }
+      body {
+        text-align: center;
+        background-image: url(../images/bby.jpg);
+        background-size: cover;
+        /* background-position: ; */
+      }
+      h2 {
+        font-size: 40px;
+        color: black;
+        background-color: plum;
+      }
+      h3 {
+        font-size: 40px;
+        color:darkred;
+        /* background-color: plum; */
+      }
+      p {
+        border: 2px solid blue;
+        width: 50%;
+        text-align: justify;
+        padding: 10px;
+        margin-left: 24%;
+        background-color: coral;
+        border-radius: 0px 20px 0px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Div Concepts</h2>
+    <div id="main">
+      <!-- <h3>Main Div</h2> -->
+      <div id="header">
+        <h3>Header</h3>
+      </div>
+      <div id="nav">
+        <h3>Nav-bar</h3>
+        <table
+          style="
+            border: 2px dotted blue;
+            width: 100%;
+            margin-top: -4.4%;
+            height: 20%;
+          "
+        >
+          <tr>
+            <th>
+              <a href="/website01/SL.html">Srilanka</a>
+            </th>
+            <th><a href="/website01/pakistan.html">Pakistan</a></th>
+            <th><a href="/website01/India.html">India</a></th>
+          </tr>
+        </table>
+      </div>
+      <div id="wrapper">
+        <h3>wrapper</h3>
+        <div id="left">
+          <h3>left</h3>
+        </div>
+        <div id="right">
+          <h3>right</h3>
+        </div>
+      </div>
+      <div id="footer">
+        <h3>footer</h3>
+      </div>
+    </div>
+  </body>
+</html>
