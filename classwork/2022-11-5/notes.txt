@@ -1,0 +1,40 @@
+difference between params and the argumets 
+
+function addition(val1,val2) ===> params mean parameters.
+function addition(5,19) ===> argumets.
+
+// if you have common things object.name, object.id, object.address etc so we can simplify this 
+
+like const {name , id , address}= object 
+
+
+What is undefined vs not defined
+undefined is a placeholder which have allocated memory but not declared with value!
+
+console.log(name);
+va name ;
+
+
+// kisi bhi url ko get karny ya API call  k lye ham fetch() ka method use karty hain!
+
+fetch("http :aklfaslfadfjkaj//asdfa").then({
+    "Result : "
+}).cath())
+
+What is Callback:
+ We call you later!
+ jab zaroorat pary ggi tu call karain gay!
+
+
+ // 
+
+ async f=function getApi()
+ {
+    try{
+            const data = await fetch(url)
+    }
+    catch()
+    {
+
+    }
+ }
