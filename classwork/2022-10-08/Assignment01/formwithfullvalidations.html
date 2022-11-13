@@ -1,0 +1,141 @@
+<!Doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form method="post">
+            <label style="margin-left: 5%;margin-top:2%;">Email Address</label>
+            <input type="email" style="margin-left: 4%;margin-bottom: 2%;margin-top:2%;" required>
+
+            <label style="margin-left: 24%;margin-top:2%;">Password</label>
+            <input type="password" style="margin-left: 9%;margin-top:2%;" required> 
+            <br>
+            <label style="margin-left: 4%;"><b>Personal Profile</b></label>
+            <fieldset legent="Personal Profile" style="width: 80%;margin-left: -0.5%;border-radius: 3%;" >
+                <!-- //texttype -->
+                <label style="margin-top: 1.5%">Name</label>
+                <input type="text" style="margin-left: 16%;margin-top: 1.5%;max-width: 10.5%;" required>
+
+                <!-- //radio -->
+                <label style="margin-left: 24%;margin-top: 3%;" id="a1">Gender</label>
+                <input  style="margin-left: 9%;" type="radio" name="a1" value="male" required>
+                <label for="a1">Male</label>
+                <input  style="margin-left: 2%;" type="radio" name="a1" value="female" required>
+                <label for="a1">Female</label>
+                <!-- //cnic -->
+                <br>
+                <label style="margin-top: 2%;">Cnic/B-form No.</label>
+                <!-- <input type="cnic" style="margin-left: 3%;margin-top: 2%;" required> -->
+                <!-- <input type="text"  data-inputmask="'mask': '0399-99999999'" required="" placeholder="XXXX-XXXXXXXX"  type = "number" maxlength = "12" > -->
+
+                <input type="text"  data-inputmask="'mask': '99999'"  style="margin-left: 9.62%;margin-top: 2%;max-width:3.1%;"  placeholder="12345" maxlength="5" name="cnic" required="" >-<input type="text"  data-inputmask="'mask': '9999999'"  maxlength="7" style="margin-top: 2%;max-width:4.7%;"  placeholder="1234567"  name="cnic" required="" >-<input type="text"  data-inputmask="'mask': '9'"  style="margin-top: 2%;max-width:1%;"  placeholder="1"  maxlength="1" name="cnic" required="" >
+
+                <!-- //picture -->
+                <!-- <br> -->
+                <label style="margin-left: 23%;">Picture</label>
+                <input type="file"  style="margin-left: 8.5%;margin-top: 2%;"  placeholder="Choose file" required>
+                <br>
+
+                <!-- //RegistrationNO -->
+                <label style="margin-top: 2%;">IUB Registration.(if any)</label>
+                <input type="text" style="margin-top: 2%;margin-left: 5%;max-width: 10.5%;"  data-inputmask="'mask': 'YEAR-RGNO'" required="" placeholder="YEAR-RGNO"  type = "number" maxlength = "8" >
+
+                
+                <!-- //LandlineNO -->
+                <label style="margin-left: 23.8%;">Landline No.</label>
+                <input type="text" style="margin-top: 2%;margin-left: 4.8%;max-width: 10.5%;"  data-inputmask="'mask': '051-1234567'" required="" placeholder="XXX-XXXX"  type = "number" maxlength = "10" >
+
+
+                <!-- //Dateofbirth -->
+                <br>
+                <label style="margin-top: 2%;">Date Of Birth</label>
+                <input type="date" style="margin-top: 2%;margin-left: 11.7%; padding-left: 1.1%;padding-right: 1.1%;padding-top: 0.12%;max-width: 10.5%;" required="" placeholder="mm/dd/yyyy"  type = "number" >
+
+                
+                <!-- //PhoneNO -->
+                <label style="margin-left: 22%;">Phone No.</label>
+                <button style="margin-top: 2%;margin-left: 2.2%;color: black;" disabled>+92</button>-
+                <input type="text" style="max-width: 10.5%;" required="" placeholder="3121234567"  type = "number" maxlength = "10" >
+
+                <!-- //Religious dropdown -->
+                <br>
+                <label style="margin-top: 2%;">Religious</label>
+                <select style="margin-left: 14%;padding-left: 2%;padding-right: 2%;padding-top: 0.12%;max-width: 10.5%;" required>
+                    <option selected>Select</option>
+                    <option>Muslim</option>
+                    <option>Non-Muslim</option>
+                </select>
+
+                
+                <!-- //Nationality textfield -->
+                <label style="margin-left: 24.7%;">Nationality</label>
+                <input type="text" style="margin-top: 2%;margin-left: 6.3%;max-width: 10.5%;" placeholder="Pakistani" required="" >
+
+
+                <!-- //Hifz e Quran dropdown -->
+                <br>
+                <label style="margin-top: 2%;">Hafiz-e-Quran</label>
+                <select style="margin-left: 11%;padding-left: 3%;padding-right: 3%;padding-top: 0.12%;margin-top: 2%;max-width: 10.5%;" required>
+                    <option selected>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+
+                
+                <!-- //Domnicile(Province) Dropdown -->
+                <label style="margin-left: 24.7%;margin-top: 2%;">Domnicile(Province)</label>
+               
+                <select style="margin-left: 0.2%;padding-left: 1.9%;padding-right: 1%;padding-top: 0.12%;" required>
+                    <option selected>Select</option>
+                    <option>Punjab</option>
+                    <option>NWFP</option>
+                    <option>Gilgit</option>
+                    <option>AJK</option>
+                    <option>Sindh</option>
+                    <option>Balochistan</option>
+                </select>
+                <br>
+
+                 <!-- //Postel Address TexTArea -->
+                 <label>Postel Address</label>
+                 <!-- <input type="textfield" style="margin-top: 2%;margin-left: 6%;" maxlength="250" required="" > -->
+                 <textarea maxlength="250"  style="margin-top: 2%;margin-left: 11%;max-width: 10.5%;" height="30%">Enter postel address.....</textarea>
+
+            </fieldset>
+            <br>
+            <br>
+            <label style="margin-left: 4%;"><b>Father Information</b></label>
+            <fieldset style="width: 80%;margin-left: -0.5%;border-radius: 3%;">
+                <!-- //texttype -->
+                <label style="margin-top: 1.5%">Father Name</label>
+                <input type="text" style="margin-left: 9.3%;margin-top: 1.5%" required>
+
+                <!-- //cnic -->
+                <label style="margin-top: 2%;margin-left: 18%;">Cnic/B-form No.</label>
+                <input type="text"  data-inputmask="'mask': '99999'"  style="margin-left: 6.67%;margin-top: 2%;max-width:3.1%;"  placeholder="12345" maxlength="5" name="cnic" required="" >-<input type="text"  data-inputmask="'mask': '9999999'"  maxlength="7" style="margin-top: 2%;max-width:4.7%;"  placeholder="1234567"  name="cnic" required="" >-<input type="text"  data-inputmask="'mask': '9'"  style="margin-top: 2%;max-width:1%;"  placeholder="1"  maxlength="1" name="cnic" required="" >
+
+                <br>
+                 <!-- //texttype -->
+                 <label style="margin-top: 1.5%">Profession</label>
+                 <input type="text" style="margin-left: 10.5%;margin-top: 1.5%" required>
+ 
+                 <!-- //income number type -->
+                 <label style="margin-top: 2%;margin-left: 18%;">Monthly Income</label>
+                 <input type="text"  data-inputmask="'mask': 'Rs.9999999'"  style="margin-left: 6.8%;margin-top: 2%;max-width: 10.5%;" placeholder="Rs.9999999" maxlength="10" name="income" required="" >
+                <br>
+                  <!-- //PhoneNO -->
+                <label >Phone No.</label>
+                <button style="margin-top: 2%;margin-left: 6.7%;color: black;" disabled>+92</button>-
+                <input type="text" style="margin-top: 2%;" required placeholder="3121234567"  type = "number" maxlength = "10" >
+
+            </fieldset style="padding-bottom: 20%;">
+            <!-- //insert line -->
+            <hr>
+            <button style="padding-left: 6%;padding-right:6%;padding-top: 1.5%;padding-bottom: 1.5%;margin-left: 33%;" type="reset">Reset</button>
+            <button style="padding-left: 6%;padding-right:6%;padding-top: 1.5%;padding-bottom: 1.5%;" type="submit">Submit</button>
+        
+        </form>
+        
+    </body>
+</html>
