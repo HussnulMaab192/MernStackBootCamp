@@ -3,6 +3,9 @@ import Counter from "./2022-11-27/counter_app";
 import Form from "./2022-11-27/forms";
 import Apicallforuser from "./2022-12-3/apicallforuser";
 import TaskForm from "./2022-12-3/taskForm";
+import MainForm from "./2022-12-4/Pizza/MainForm";
+import TableOutput from "./2022-12-4/Pizza/TableOutput";
+import FormData from "./2022-12-4/Form";
 
 function App() {
   // const [state, setState] = useState("");
@@ -15,7 +18,9 @@ function App() {
       {/* <Counter></Counter> */}
       {/* <Form></Form> */}
       {/* <TaskForm name={state} setName={(params) => setState(params)} /> */}
-      <TaskForm />
+      {/* <TaskForm /> */}
+      {/* <FormData /> */}
+      <MainForm />
     </div>
   );
 }
