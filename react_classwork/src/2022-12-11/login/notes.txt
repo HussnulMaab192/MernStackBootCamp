@@ -1,0 +1,18 @@
+react hamain routing allow nai karta 
+react main navigation nai hoti
+
+So we have to React_Router_Dom to set the navigation.
+
+React_Router_Dom and React_Router 
+
+Redux  it is the library of JS not React!
+
+
+we uses Redux when we need to uplift the state !
+I mean when we need to give the property to child which Parent dont have that property!
+
+
+So we use redux to change the state using one component !
+
+react-redux
+

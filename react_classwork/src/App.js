@@ -6,6 +6,7 @@ import TaskForm from "./2022-12-3/taskForm";
 import MainForm from "./2022-12-4/Pizza/MainForm";
 import TableOutput from "./2022-12-4/Pizza/TableOutput";
 import FormData from "./2022-12-4/Form";
+import AppRoutes from "./2022-12-11/routes";
 
 function App() {
   // const [state, setState] = useState("");
@@ -20,7 +21,10 @@ function App() {
       {/* <TaskForm name={state} setName={(params) => setState(params)} /> */}
       {/* <TaskForm /> */}
       {/* <FormData /> */}
-      <MainForm />
+      {/* <MainForm />
+       */}
+      {/* {<Login />} */}
+      <AppRoutes />
     </div>
   );
 }
