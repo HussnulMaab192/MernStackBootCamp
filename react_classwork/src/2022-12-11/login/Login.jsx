@@ -24,15 +24,20 @@ const Login = () => {
       state.password
     );
     if (user) {
-      navigate("/Register");
+      navigate("/Post");
     } else {
-      alert("something wrong!!");
+      Alert("something wrong!!");
     }
   };
   const handlGoogleLogin = async (event) => {
     event.preventDefault();
     const userGoogle = await signInWithPopup(auth, google);
     console.log(userGoogle);
+    if (userGoogle) {
+      navigate("/Post");
+    } else {
+      Alert("something wrong!!");
+    }
   };
 
   return (
