@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Post = () => {
   const [user, setUser] = useState([]);
-
-  useEffect(() => {     // componentDidMount == life cycle !
+  const navigate = useNavigate();
+  useEffect(() => {
+    // componentDidMount == life cycle !
     setTimeout(() => {
       getUserData();
     }, 500);
@@ -12,6 +14,7 @@ const Post = () => {
   const getUserData = async () => {
     try {
       const resposne = await fetch(
+        // a
         "https://jsonplaceholder.typicode.com/posts"
       );
       const data = await resposne.json();
@@ -21,20 +24,35 @@ const Post = () => {
       console.log("🚀 Error!!!", error);
     }
   };
+  const handleClick = (params) => {
+    navigate(`/PostDetails/${params}`); // o
+    //user[params];
+  };
   return (
-    <div>
-      {user.length > 0 ? (
-        user.map((el) => (
-          <ol>
-            <li> {el.userId}</li>
-            <li>{el.id}</li>
-            <li>{el.title}</li>
-            <li> {el.body}</li>
-          </ol>
-        ))
-      ) : (
-        <p>Loadign...</p>
-      )}
+    <div className="container-sm">
+      <div className="row">
+        <div className="col col-sm-6">
+          {user.length > 0 ? (
+            user.map((el, i) => (
+              <ul>
+                <li> {el.userId}</li>
+
+                <li>{el.id}</li>
+
+                <li>{el.title}</li>
+
+                <li> {el.body}</li>
+                <button onClick={() => handleClick(el.id)}>
+                  {" "}
+                  Show Details{" "}
+                </button>
+              </ul>
+            ))
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
