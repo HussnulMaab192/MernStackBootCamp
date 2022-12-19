@@ -6,7 +6,7 @@ import {
   signInWithPopup,
   google,
   facebook,
-} from "../services/firebase-config";
+} from "../Services/firebase-config";
 
 function LoginForm() {
   const navigate = useNavigate();

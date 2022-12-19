@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { CircularProgressbar } from "react-circular-progressbar";
+// import { CircularProgressbar } from "react-circular-progressbar";
 
-const Postform = () => {
+const PostForm = () => {
   const [postData, setPostData] = useState([]);
   const value = 0.66;
   const navigate = useNavigate();
@@ -52,11 +52,11 @@ const Postform = () => {
               ))
             ) : (
               <div style={{ width: 200, height: 200 }}>
-                <CircularProgressbar
+                {/* <CircularProgressbar
                   value={value}
                   maxValue={1}
                   text={`${value * 100}%`}
-                />
+                /> */}
                 ;
               </div>
             )}
@@ -67,4 +67,4 @@ const Postform = () => {
   );
 };
 
-export default Postform;
+export default PostForm;

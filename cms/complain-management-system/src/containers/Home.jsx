@@ -1,5 +1,4 @@
 import React from "react";
-import { notInitialized } from "react-redux/es/utils/useSyncExternalStore";
 import { Link, Outlet } from "react-router-dom";
 
 const Home = () => {

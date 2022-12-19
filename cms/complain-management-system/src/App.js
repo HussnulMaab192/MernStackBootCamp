@@ -1,14 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Provider } from "react-redux";
 import AppRoutes from "./Routes/AppRoutes";
+import { store } from "./Store/AllStates";
 
 function App() {
-  return (
-    <Provider store={store}>
-      <AppRoutes />
-    </Provider>
-  )
+  return <AppRoutes />;
 }
 
 export default App;
