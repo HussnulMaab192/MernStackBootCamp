@@ -9,6 +9,12 @@ const Home = () => {
           Complaint Management System
           <form class="d-flex" role="search">
             <Link
+              to="/ReactQueryPacket"
+              style={{ textDecoration: "none", marginLeft: "12px" }}
+            >
+              CustomAPI
+            </Link>
+            <Link
               to="/Home"
               style={{ textDecoration: "none", marginLeft: "12px" }}
             >

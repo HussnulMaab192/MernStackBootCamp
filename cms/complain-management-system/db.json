@@ -1,0 +1,32 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "modal": "Corolla",
+      "name": "GLI"
+    },
+    {
+       "id": 2, "modal": "Suzuki", "name": "Mehran" 
+      },
+    {
+       "id": 3, "modal": "Honda", "name": "Civic" 
+      }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
